@@ -1,0 +1,70 @@
+
+.container-main-dropdown {
+    background-color: #f7f7f7;
+
+    .container-left {
+        color: #0085e4;
+    }
+    
+    .container-right {
+        position: relative;
+        background-color: #e9ecef;
+
+        .container-versus {
+            top: 30%;
+            left: -3%;
+            position: absolute;
+            background-color: #0079e2;
+            color: white;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: auto;
+        }
+
+        .MuiFormControl-root {
+            margin: auto;
+            width: 80%;
+            
+            .MuiInputLabel-shrink {
+                display: none;
+            }
+
+            .MuiOutlinedInput-notchedOutline {
+                border-color: #c4c4c4;
+            }
+        }
+
+        .MuiInputBase-root {
+            background-color: white;
+
+            .MuiSelect-select {
+                background-color: white;
+            }
+        }
+        
+        .MuiFormLabel-filled {
+            display: none;
+        }
+    }
+}
+
+.container-chart {
+    .MuiButton-root {
+        text-transform: capitalize;
+        color: #00b3ab;
+        margin: 0 8px 0 0;
+
+        &:hover {
+            color: white;
+            background-color: #00b3ab;
+        }
+    }
+
+    .MuiButton-active-root {
+        color: white;
+        background-color: #00b3ab;
+    }
+}

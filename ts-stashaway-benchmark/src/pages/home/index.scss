@@ -1,0 +1,129 @@
+@import '../../helper/global';
+
+
+.title-home {
+
+    @extend %base-background-color;
+    color: white;
+
+    .overview-button {
+        width: fit-content;
+        color: #00b3ab;
+        cursor: pointer;
+    }
+
+}
+
+.actions {
+    color: white;
+    @extend %base-background-color;
+
+    .action-dropdown {
+
+        cursor: pointer;
+        transition: all .2s ease-in;
+
+        &:hover {
+            color: #00b3ab;
+        }
+
+        &.hover {
+            color: #00b3ab;
+        }
+
+        .blocker {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            content: ' ';
+            opacity: 0;
+            z-index: 99;
+            cursor: default;
+
+            &.display {
+                display: none;
+            }
+        }
+
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid white;
+            transition: all .2s ease-in;
+
+            &.hover {
+                border-top: 8px solid #00b3ab;
+            }
+
+            &.rotate {
+                transform: rotate(180deg) scaleX(-1);
+            }
+        }
+          
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 999;
+            color: black;
+            border-radius: 4px;
+
+            a {
+                transition: all .2s ease-in;
+                padding: 12px 10px;
+                text-align: left;
+
+                &:hover {
+                    color: white;
+                    background-color: #00b3ab;
+                }
+
+                &:last-child{
+                    color:#c9746b;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            &.dropdown-content-display {
+                display: block;
+                right: 30px;
+            }
+        }
+    }
+}
+
+.MuiTabs-root {
+    background-color: #001f3b;
+
+    .MuiTab-root {
+        min-width: 50px;
+        margin: 0 10px 0 0;
+    }
+
+    .Mui-selected{
+        outline: none;
+        color: #00b3ab;
+
+    }
+
+    .MuiTabs-indicator {
+        background-color: #00b3ab;
+        height: 5px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+    }
+}
+
+.MuiBox-root {
+    padding: 24px 0 !important;
+}

@@ -1,0 +1,28 @@
+@import '../../../helper/global';
+
+
+.container-main {
+    @extend %base-background-color;
+    
+    color: white;
+    border-radius: 10px;
+
+    .header {
+        color: #a9adaf
+    }
+
+    .sub-header {
+        color: #a9adaf;
+    }
+}
+
+.custom-tooltip {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    min-width: 200px;
+
+    .currency-text {
+        color: #0083e4;
+    }
+}
