@@ -1,9 +1,9 @@
-[submodule "technical-assessments/ts-lighting-assessment"]
+[submodule "ts-lighting-assessment"]
 	path = technical-assessments/ts-lighting-assessment
 	url = https://github.com/azriebakri/ts-lighting-assessment.git
-[submodule "technical-assessments/ts-image-uploader-azure"]
+[submodule "ts-image-uploader-azure"]
 	path = technical-assessments/ts-image-uploader-azure
 	url = https://github.com/azriebakri/ts-image-uploader-azure.git
 [submodule "technical-assessments/ts-url-shortener"]
-	path = technical-assessments/ts-url-shortener
+	path = ts-url-shortener
 	url = https://github.com/azriebakri/ts-url-shortener.git
